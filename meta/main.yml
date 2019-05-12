@@ -10,20 +10,12 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 6
         - 7
-    - name: Debian
-      versions:
-        - jessie
-        - stretch
     - name: Fedora
       versions:
         - 27
-        - 28
-        - 29
     - name: Ubuntu
       versions:
-        - trusty
         - xenial
         - bionic
   galaxy_tags:
