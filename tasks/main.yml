@@ -121,5 +121,5 @@
   become: true
   systemd:
     name: cockpit
-    state: restarted
+    state: started
     enabled: true
