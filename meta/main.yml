@@ -6,7 +6,7 @@ galaxy_info:
   author: hwwilliams
   description: Installs Cockpit
   license: license (MIT)
-  min_ansible_version: 2.7.10
+  min_ansible_version: 2.4
   platforms:
     - name: EL
       versions:
