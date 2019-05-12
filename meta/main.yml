@@ -1,0 +1,30 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: cockpit
+  author: hwwilliams
+  description: Installs Cockpit
+  license: license (MIT)
+  min_ansible_version: 2.7.10
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+    - name: Fedora
+      versions:
+        - 27
+        - 28
+        - 29
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
+  galaxy_tags:
+    - system

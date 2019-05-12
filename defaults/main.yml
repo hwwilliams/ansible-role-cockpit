@@ -1,0 +1,66 @@
+---
+cockpit_composer: false
+cockpit_composer_packages:
+    - cockpit-composer
+
+cockpit_dashboard: false
+cockpit_dashboard_packages:
+    - cockpit-dashboard
+
+cockpit_doc: false
+cockpit_doc_packages:
+    - cockpit-doc
+
+cockpit_docker: false
+cockpit_docker_packages:
+    - cockpit-docker
+
+cockpit_kdump: false
+cockpit_kdump_packages:
+    - cockpit-kdump
+
+cockpit_kubernetes: false
+cockpit_kubernetes_packages:
+    - cockpit-kubernetes
+
+cockpit_machines: false
+cockpit_machines_packages:
+    - cockpit-machines
+
+cockpit_machines_ovirt: false
+cockpit_machines_ovirt_packages:
+    - cockpit-machines-ovirt
+
+cockpit_networkmanager: false
+cockpit_networkmanager_packages:
+    - cockpit-networkmanager
+
+cockpit_packagekit: false
+cockpit_packagekit_packages:
+    - cockpit-packagekit
+
+cockpit_pcp: false
+cockpit_pcp_packages:
+    - cockpit-pcp
+
+cockpit_selinux: false
+cockpit_selinux_packages:
+    - cockpit-selinux
+    - setroubleshoot-server
+
+cockpit_sosreport: false
+cockpit_sosreport_packages:
+    - cockpit-sosreport
+
+cockpit_storaged: false
+cockpit_storaged_packages:
+    - cockpit-storaged
+
+cockpit_subscriptions: false
+cockpit_subscriptions_packages:
+    - cockpit-subscriptions
+
+cockpit_tests: false
+cockpit_tests_packages:
+    - cockpit-tests
+

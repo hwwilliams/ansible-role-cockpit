@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  pre_tasks:
+    - name: Update Apt Cache
+      apt: update_cache=yes cache_valid_time=360
+      when: ansible_os_family == 'Debian'
+      changed_when: false
+  roles:
+    - role: hwwilliams.cockpit
