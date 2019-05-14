@@ -136,6 +136,6 @@
 - name: Ensure Cockpit Is Running and Starts on Boot
   become: true
   systemd:
-    name: cockpit
+    name: cockpit.socket
     state: started
     enabled: true
