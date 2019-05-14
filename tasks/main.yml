@@ -10,6 +10,7 @@
   package:
     name: "{{ cockpit_composer_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_composer
 
 - name: Ensure Cockpit Dashboard Packages Are Present
@@ -17,6 +18,7 @@
   package:
     name: "{{ cockpit_dashboard_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_dashboard
 
 - name: Ensure Cockpit Doc Packages Are Present
@@ -24,6 +26,7 @@
   package:
     name: "{{ cockpit_doc_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_doc
 
 - name: Ensure Cockpit Docker Packages Are Present
@@ -31,6 +34,7 @@
   package:
     name: "{{ cockpit_docker_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_docker
 
 - name: Ensure Cockpit Kdump Packages Are Present
@@ -38,6 +42,7 @@
   package:
     name: "{{ cockpit_kdump_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_kdump
 
 - name: Ensure Cockpit Kubernetes Packages Are Present
@@ -45,6 +50,7 @@
   package:
     name: "{{ cockpit_kubernetes_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_kubernetes
 
 - name: Ensure Cockpit Machines Packages Are Present
@@ -52,6 +58,7 @@
   package:
     name: "{{ cockpit_machines_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_machines
 
 - name: Ensure Cockpit Machines Ovirt Packages Are Present
@@ -59,6 +66,7 @@
   package:
     name: "{{ cockpit_machines_ovirt_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_machines_ovirt
 
 - name: Ensure Cockpit Networkmanager Packages Are Present
@@ -66,6 +74,7 @@
   package:
     name: "{{ cockpit_networkmanager_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_networkmanager
 
 - name: Ensure Cockpit Packagekit Packages Are Present
@@ -73,6 +82,7 @@
   package:
     name: "{{ cockpit_packagekit_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_packagekit
 
 - name: Ensure Cockpit PCP Packages Are Present
@@ -80,6 +90,7 @@
   package:
     name: "{{ cockpit_pcp_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_pcp
 
 - name: Ensure Cockpit Selinux Packages Are Present
@@ -87,6 +98,7 @@
   package:
     name: "{{ cockpit_selinux_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_selinux
 
 - name: Ensure Cockpit SOSReport Packages Are Present
@@ -94,6 +106,7 @@
   package:
     name: "{{ cockpit_sosreport_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_sosreport
 
 - name: Ensure Cockpit Storaged Packages Are Present
@@ -101,6 +114,7 @@
   package:
     name: "{{ cockpit_storaged_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_storaged
 
 - name: Ensure Cockpit Subscriptions Packages Are Present
@@ -108,6 +122,7 @@
   package:
     name: "{{ cockpit_subscriptions_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_subscriptions
 
 - name: Ensure Cockpit Tests Packages Are Present
@@ -115,6 +130,7 @@
   package:
     name: "{{ cockpit_tests_packages }}"
     state: present
+  notify: Restart Cockpit
   when: cockpit_tests
 
 - name: Ensure Cockpit Is Running and Starts on Boot
