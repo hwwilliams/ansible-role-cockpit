@@ -1,0 +1,3 @@
+---
+- name: Restart Cockpit
+  systemd: name=cockpit state=restarted
