@@ -11,7 +11,7 @@
     name: "{{ cockpit_composer_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_composer
+  when: cockpit_composer | bool
 
 - name: Ensure Cockpit Dashboard Packages Are Present
   become: true
@@ -19,7 +19,7 @@
     name: "{{ cockpit_dashboard_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_dashboard
+  when: cockpit_dashboard | bool
 
 - name: Ensure Cockpit Doc Packages Are Present
   become: true
@@ -27,7 +27,7 @@
     name: "{{ cockpit_doc_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_doc
+  when: cockpit_doc | bool
 
 - name: Ensure Cockpit Docker Packages Are Present
   become: true
@@ -35,7 +35,7 @@
     name: "{{ cockpit_docker_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_docker
+  when: cockpit_docker | bool
 
 - name: Ensure Cockpit Kdump Packages Are Present
   become: true
@@ -43,7 +43,7 @@
     name: "{{ cockpit_kdump_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_kdump
+  when: cockpit_kdump | bool
 
 - name: Ensure Cockpit Kubernetes Packages Are Present
   become: true
@@ -51,7 +51,7 @@
     name: "{{ cockpit_kubernetes_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_kubernetes
+  when: cockpit_kubernetes | bool
 
 - name: Ensure Cockpit Machines Packages Are Present
   become: true
@@ -59,7 +59,7 @@
     name: "{{ cockpit_machines_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_machines
+  when: cockpit_machines | bool
 
 - name: Ensure Cockpit Machines Ovirt Packages Are Present
   become: true
@@ -67,7 +67,7 @@
     name: "{{ cockpit_machines_ovirt_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_machines_ovirt
+  when: cockpit_machines_ovirt | bool
 
 - name: Ensure Cockpit Networkmanager Packages Are Present
   become: true
@@ -75,7 +75,7 @@
     name: "{{ cockpit_networkmanager_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_networkmanager
+  when: cockpit_networkmanager | bool
 
 - name: Ensure Cockpit Packagekit Packages Are Present
   become: true
@@ -83,7 +83,7 @@
     name: "{{ cockpit_packagekit_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_packagekit
+  when: cockpit_packagekit | bool
 
 - name: Ensure Cockpit PCP Packages Are Present
   become: true
@@ -91,7 +91,7 @@
     name: "{{ cockpit_pcp_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_pcp
+  when: cockpit_pcp | bool
 
 - name: Ensure Cockpit Selinux Packages Are Present
   become: true
@@ -99,7 +99,7 @@
     name: "{{ cockpit_selinux_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_selinux
+  when: cockpit_selinux | bool
 
 - name: Ensure Cockpit SOSReport Packages Are Present
   become: true
@@ -107,7 +107,7 @@
     name: "{{ cockpit_sosreport_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_sosreport
+  when: cockpit_sosreport | bool
 
 - name: Ensure Cockpit Storaged Packages Are Present
   become: true
@@ -115,7 +115,7 @@
     name: "{{ cockpit_storaged_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_storaged
+  when: cockpit_storaged | bool
 
 - name: Ensure Cockpit Subscriptions Packages Are Present
   become: true
@@ -123,7 +123,7 @@
     name: "{{ cockpit_subscriptions_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_subscriptions
+  when: cockpit_subscriptions | bool
 
 - name: Ensure Cockpit Tests Packages Are Present
   become: true
@@ -131,7 +131,7 @@
     name: "{{ cockpit_tests_packages }}"
     state: present
   notify: Restart Cockpit
-  when: cockpit_tests
+  when: cockpit_tests | bool
 
 - name: Ensure Cockpit Is Running and Starts on Boot
   become: true
